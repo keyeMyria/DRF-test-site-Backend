@@ -7,4 +7,6 @@ channel_routing = [
             path=r"^/user/(?P<username>.+)/$"),
     include('article.websockets.routing.article_list_routing',
             path=r"^/article-list/$"),
+    include('misc.websockets.routing.user_online_routing',
+            path=r"^/ws/online-users/$"),
 ]
